@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #f6f7fb;
+}
+
+.container {
+  max-width: 760px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  margin-bottom: 16px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #d8dbe2;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+.grid2 {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Three column layout for city, province and postal code */
+.grid3 {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Row for checkbox and its label */
+.row-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.row-check input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Style select like an input */
+select {
+  padding: 10px 12px;
+  border: 1px solid #d8dbe2;
+  border-radius: 8px;
+  outline: none;
+  appearance: none;
+  background-color: #fff;
+}
+select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+.btn {
+  appearance: none;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+}
+
+.error {
+  color: #b42318;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+.output h2 {
+  margin-top: 0;
+}
+
+.kv {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px dashed #e6e8ef;
+}
+
+.k {
+  font-weight: 700;
+}
+
+.v {
+  word-break: break-word;
+}
+
+@media (max-width: 560px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
